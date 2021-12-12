@@ -1,0 +1,26 @@
+/*
+ * file: src/css/index.css
+ * author: Josue Teodoro Moreira <teodoro.josue@protonmail.ch>
+ * date: December 11, 2021
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .svg-nord6 {
+    filter: invert(91%) sepia(6%) saturate(151%) hue-rotate(173deg) brightness(106%) contrast(93%);
+  }
+
+  .menu-button {
+    @apply w-full py-4 bg-nord6 rounded-lg drop-shadow-lg duration-300
+           hover:bg-nord4
+           md:px-0 md:py-0 md:bg-nord1 md:drop-shadow-none
+           md:hover:bg-nord1 md:hover:opacity-80;
+  }
+
+  .menu-button-text {
+    @apply md:mt-3;
+  }
+}

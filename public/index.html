@@ -1,0 +1,52 @@
+<!--
+  -- file: public/index.html
+  -- author: Josue Teodoro Moreira teodoro.josue@protonmail.ch
+  -- date: December 11, 2021
+  -->
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Josue Teodoro Moreira | Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='./style.css'/>
+
+    <script src='./src/js/menu.js'></script>
+  </head>
+  <body class='bg-nord0'>
+    <!-- header -->
+    <div class='fixed w-screen flex flex-col bg-nord1 drop-shadow-lg
+                md:flex-row md:justify-between md:py-2'>
+      <!-- logo -->
+      <p class='ml-4 my-2 font-bakbak-one font-bold text-5xl text-nord6
+                md:my-0 '>J0sueTM</p>
+      <!-- menu trigger -->
+      <img class='absolute w-12 right-4 svg-nord6 duration-500
+                  md:invisible
+                  hover:cursor-pointer hover:opacity-80'
+           src='../res/img/menu.svg'/>
+      <!-- menu -->
+      <div class='w-screen px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-4xl text-nord1 text-center
+                  md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'>
+        <a class='menu-button' href='#'>
+          <p class='menu-button-text'>HOME</p>
+        </a>
+        <a class='menu-button' href='#'>
+          <p class='menu-button-text'>SKILLS</p>
+        </a>
+        <a class='menu-button' href='#'>
+          <p class='menu-button-text'>PROJECTS</p>
+        </a>
+        <a class='menu-button' href='#'>
+          <p class='menu-button-text'>CONTACT</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
