@@ -9,10 +9,6 @@
 @tailwind utilities;
 
 @layer components {
-  .svg-nord6 {
-    filter: invert(91%) sepia(6%) saturate(151%) hue-rotate(173deg) brightness(106%) contrast(93%);
-  }
-
   .menu-button {
     @apply w-full py-4 bg-nord6 rounded-lg drop-shadow-lg duration-300
            hover:bg-nord4
@@ -22,5 +18,24 @@
 
   .menu-button-text {
     @apply md:mt-3;
+  }
+
+  .social-media-icon {
+    @apply w-10 duration-300
+           hover:opacity-90;
+  }
+}
+
+@layer utilities {
+    .svg-nord0 {
+    filter: invert(17%) sepia(28%) saturate(418%) hue-rotate(182deg) brightness(93%) contrast(91%);
+  }
+
+  .svg-nord1 {
+    filter: invert(24%) sepia(8%) saturate(1412%) hue-rotate(184deg) brightness(93%) contrast(88%);
+  }
+
+  .svg-nord6 {
+    filter: invert(91%) sepia(6%) saturate(151%) hue-rotate(173deg) brightness(106%) contrast(93%);
   }
 }

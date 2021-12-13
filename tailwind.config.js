@@ -27,6 +27,10 @@ module.exports = {
         'bakbak-one': [
           'Bakbak One',
           'cursive'
+        ],
+        'ubuntu': [
+          'ubuntu',
+          'sans-serif'
         ]
       }
     }
