@@ -18,12 +18,13 @@
     
     <link rel='stylesheet' href='./style.css'/>
 
-    <script src='./src/js/menu.js'></script>
+    <script src='../src/js/menu.js'></script>
   </head>
   <body class='bg-nord0'>
     <!-- header -->
-    <div class='w-screen flex flex-col bg-nord1 drop-shadow-lg
-                md:flex-row md:justify-between md:py-2'>
+    <div class='w-full h-16 flex flex-col bg-nord1 drop-shadow-lg
+                md:flex-row md:justify-between md:py-2'
+         id='header'>
       <!-- logo -->
       <p class='ml-4 my-2 font-bakbak-one font-bold text-5xl text-nord6
                 md:my-0 '>J0sueTM</p>
@@ -32,32 +33,37 @@
                   md:invisible
                   hover:cursor-pointer hover:opacity-80'
            src='../res/img/menu.svg'
-           alt='menu sandwich icon'/>
+           alt='menu sandwich icon'
+           onclick='toggleMenu()'/>
       <!-- menu -->
-      <div class='fixed invisible w-screen px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-4xl text-nord1 text-center
-                  md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'>
-        <a class='menu-button' href='#'>
+      <div class='invisible w-full px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-3xl text-nord1 text-center
+                  md:visible md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'
+           id='menu'>
+        <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>HOME</p>
         </a>
-        <a class='menu-button' href='#'>
+        <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>SKILLS</p>
         </a>
-        <a class='menu-button' href='#'>
+        <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>PROJECTS</p>
         </a>
-        <a class='menu-button' href='#'>
+        <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>CONTACT</p>
         </a>
       </div>
     </div>
-
     <!-- landing -->
-    <div class='px-2 pt-4 flex flex-col font-ubuntu bg-nord1'>
-      <div class='flex flex-col justify-center items-center'>
+    <div class='px-2 pt-4 flex flex-col font-ubuntu'>
+      <div class='flex flex-col justify-center items-center
+                  md:mx-auto md:flex-row md:space-x-4'>
         <!-- profile picture -->
-        <img class='w-1/3 rounded-[50%] border-4 border-nord6' src='../res/img/pfp.png' alt='pfp'/>
+        <img class='w-1/3 rounded-[50%] border-4 border-nord6
+                    md:h-full'
+             src='../res/img/pfp.png' alt='pfp'/>
         <!-- social media -->
-        <div class='mt-2 p-2 flex flex-row space-x-4 '>
+        <div class='mt-2 p-2 flex flex-row space-x-4 
+                    md:flex-col md:space-x-0 md:space-y-4'>
           <a class='social-media-icon' href = '#'>
             <img class='svg-nord6' src='../res/img/github.svg'/>
           </a>
@@ -73,14 +79,17 @@
         </div>
       </div>
       <!-- info -->
-      <div class='my-2 py-2 flex flex-col justify-center items-center rounded-lg bg-nord2'>
+      <div class='py-2 flex flex-col justify-center items-center
+                  md:w-2/3 md:mx-auto'>
         <!-- name -->
-        <h1 class='font-black text-center text-4xl text-nord6'>Hi, I'm Josué Teodoro Moreira</h1>
+        <h1 class='font-black text-center text-4xl text-nord6
+                   md:text-5xl'>Hi, I'm Josué Teodoro Moreira</h1>
         <!-- description -->
-        <p class='mt-2 pl-2 font-ubuntu font-semibold text-nord6 text-xl'>
+        <p class='mt-2 pl-2 font-ubuntu font-semibold text-nord6 text-xl
+                  md:w-5/6'>
           A curious and enthusiastic Software Developer based in SP, Brazil. My main interest is
           Low Level and Graphics Programming (C, C++, x86_64 Assembly, OpenGL, Vulkan),
-          but I'm open to anything related to coding, including Web Development.
+          Web Development (HCJ, Tailwind, NodeJS, Python), and anything related to programming.
         </p>
       </div>
     </div>
