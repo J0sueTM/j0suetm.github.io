@@ -39,13 +39,13 @@
       <div class='invisible w-full px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-3xl text-nord1 text-center
                   md:visible md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'
            id='menu'>
-        <a class='menu-button' href='#skills' onclick='toggleMenu()'>
+        <a target='blank' class='menu-button' href='#skills' onclick='toggleMenu()'>
           <p class='menu-button-text'>SKILLS</p>
         </a>
-        <a class='menu-button' href='#projects' onclick='toggleMenu()'>
+        <a target='blank' class='menu-button' href='#projects' onclick='toggleMenu()'>
           <p class='menu-button-text'>PROJECTS</p>
         </a>
-        <a class='menu-button' href='#contact' onclick='toggleMenu()'>
+        <a target='blank' class='menu-button' href='#contact' onclick='toggleMenu()'>
           <p class='menu-button-text'>CONTACT</p>
         </a>
       </div>
@@ -63,7 +63,7 @@
                       md:w-7/12 md:h-full'
                src='./res/img/pfp.png' alt='pfp'/>
           <!-- Email -->
-          <a class='my-4 rounded-lg drop-shadow-xl bg-nord1
+          <a target='blank' class='my-4 rounded-lg drop-shadow-xl bg-nord1
                     md:mb-0'
              href='mailto:teodoro.josue@protonmail.ch'>
             <p class='px-2 py-1 font-semibold text-lg text-nord6'>
@@ -74,16 +74,16 @@
         <!-- social media -->
         <div class='flex flex-row space-x-4 
                     md:flex-col md:space-x-0 md:space-y-4'>
-          <a class='social-media-icon' href = 'https://github.com/J0sueTM'>
+          <a target='blank' class='social-media-icon' href = 'https://github.com/J0sueTM'>
             <img class='svg-nord6' src='./res/img/github.svg'/>
           </a>
-          <a class='social-media-icon' href = 'https://linkedin.com/in/josue-teodoro-moreira'>
+          <a target='blank' class='social-media-icon' href = 'https://linkedin.com/in/josue-teodoro-moreira'>
             <img class='svg-nord6' src='./res/img/linkedin.svg'/>
           </a>
-          <a class='social-media-icon' href = 'https://twitter.com/J0sueTM'>
+          <a target='blank' class='social-media-icon' href = 'https://twitter.com/J0sueTM'>
             <img class='svg-nord6' src='./res/img/twitter.svg'/>
           </a>
-          <a class='social-media-icon' href = 'https://instagram.com/j0suetm'>
+          <a target='blank' class='social-media-icon' href = 'https://instagram.com/j0suetm'>
             <img class='svg-nord6' src='./res/img/instagram.svg'/>
           </a>
         </div>
@@ -141,6 +141,11 @@
           <img class='svg-nord6' src='./res/img/status.svg'>
         </div>
       </div>
+    </div>
+
+    <!-- footer -->
+    <div class='mt-4 w-full py-6 h-20 bg-nord1 rounded-t-lg'>
+      <p class='font-semibold text-lg text-center text-nord6'>© 2021 Josué Teodoro Moreira</p>
     </div>
   </body>
 </html>
