@@ -24,10 +24,22 @@
     @apply w-10 duration-300
            hover:opacity-90;
   }
+
+  .skill-card {
+    @apply w-5/6 mx-auto flex flex-col bg-nord0 rounded-lg drop-shadow-xl text-center;
+  }
+
+  .skill-card h1 {
+    @apply mt-2 font-semibold text-lg text-nord6;
+  }
+
+  .skill-card img {
+    @apply w-16 mx-auto my-4;
+  }
 }
 
 @layer utilities {
-    .svg-nord0 {
+  .svg-nord0 {
     filter: invert(17%) sepia(28%) saturate(418%) hue-rotate(182deg) brightness(93%) contrast(91%);
   }
 

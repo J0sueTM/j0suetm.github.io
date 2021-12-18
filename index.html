@@ -41,7 +41,7 @@
            id='menu'>
         <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>HOME</p>
-        </a>
+        </a>        
         <a class='menu-button' href='#' onclick='toggleMenu()'>
           <p class='menu-button-text'>SKILLS</p>
         </a>
@@ -53,44 +53,96 @@
         </a>
       </div>
     </div>
+
     <!-- landing -->
     <div class='px-2 pt-4 flex flex-col font-ubuntu'>
       <div class='flex flex-col justify-center items-center
-                  md:mx-auto md:flex-row md:space-x-4'>
-        <!-- profile picture -->
-        <img class='w-1/3 rounded-[50%] border-4 border-nord6
-                    md:h-full'
-             src='./res/img/pfp.png' alt='pfp'/>
+                  md:mx-auto md:flex-row'>
+        <!-- pfp & email -->
+        <div class='w-full flex flex-col justify-center items-center
+                    md:w-1/2'>
+          <!-- profile picture -->
+          <img class='w-1/3 border-4 border-nord6 rounded-[50%] drop-shadow-xl
+                      md:w-7/12 md:h-full'
+               src='./res/img/pfp.png' alt='pfp'/>
+          <!-- Email -->
+          <a class='my-4 rounded-lg drop-shadow-xl bg-nord1
+                    md:mb-0'
+             href='mailto:teodoro.josue@protonmail.ch'>
+            <p class='px-2 py-1 font-semibold text-lg text-nord6'>
+              teodoro.josue@protonmail.ch
+            </p>
+          </a>
+        </div>
         <!-- social media -->
-        <div class='mt-2 p-2 flex flex-row space-x-4 
+        <div class='flex flex-row space-x-4 
                     md:flex-col md:space-x-0 md:space-y-4'>
           <a class='social-media-icon' href = '#'>
             <img class='svg-nord6' src='./res/img/github.svg'/>
           </a>
-          <a class='social-media-icon' href = '#'>
+          <a class='social-media-icon' href = 'https://linkedin.com/in/josue-teodoro-moreira'>
             <img class='svg-nord6' src='./res/img/linkedin.svg'/>
           </a>
-          <a class='social-media-icon' href = '#'>
+          <a class='social-media-icon' href = 'twitter.com/J0sueTM'>
             <img class='svg-nord6' src='./res/img/twitter.svg'/>
           </a>
-          <a class='social-media-icon' href = '#'>
+          <a class='social-media-icon' href = 'https://instagram.com/j0suetm'>
             <img class='svg-nord6' src='./res/img/instagram.svg'/>
           </a>
         </div>
       </div>
       <!-- info -->
-      <div class='py-2 flex flex-col justify-center items-center
-                  md:w-2/3 md:mx-auto'>
+      <div class='p-2 flex flex-col justify-center items-center
+                  md:w-5/6 md:mx-auto
+                  lg:w-2/3'>
         <!-- name -->
         <h1 class='font-black text-center text-4xl text-nord6
-                   md:text-5xl'>Hi, I'm Josué Teodoro Moreira</h1>
+                   md:text-5xl'>Josué Teodoro Moreira</h1>
         <!-- description -->
-        <p class='mt-2 pl-2 font-ubuntu font-semibold text-nord6 text-xl
+        <p class='mt-2 font-ubuntu font-semibold text-nord6 text-xl
                   md:w-5/6'>
           A curious and enthusiastic Software Developer based in SP, Brazil. My main interest is
           Low Level and Graphics Programming (C, C++, x86_64 Assembly, OpenGL, Vulkan),
           Web Development (HCJ, Tailwind, NodeJS, Python), and anything related to programming.
         </p>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div class='p-2 pb-4 mt-2 bg-nord6 text-nord0
+                md:w-11/12 md:mx-auto md:rounded-md md:drop-shadow-xl'>
+      <!-- title -->
+      <div class='px-2'>
+        <h1 class='font-bold text-4xl text-center'>My skills</h1>
+        <p class='mt-2 font-semibold text-xl
+                  md:w-2/3 md:mx-auto'>
+          Even taking into account that I'm still in high school,
+          I've worked on several projects, open source, closed source
+          and college projects, which required an even more peculiar
+          set of skills, ranging from soft skills, programming
+          languages, etc.
+        </p>
+      </div>
+      <!-- soft skills-->
+      <h1 class='my-4 font-bold text-3xl text-center'>Soft Skills</h1>
+      <div class='grid grid-cols-2 gap-2
+                  md:grid-cols-4 gap-4'>
+        <div class='skill-card'>
+          <h1>Communication</h1>
+          <img class='svg-nord6' src='./res/img/phone.svg'>
+        </div>
+        <div class='skill-card'>
+          <h1>Administration</h1>
+          <img class='svg-nord6' src='./res/img/time.svg'>
+        </div>
+        <div class='skill-card'>
+          <h1>Stability</h1>
+          <img class='svg-nord6' src='./res/img/arrow-up.svg'>
+        </div>
+        <div class='skill-card'>
+          <h1>Fast Learning Curve</h1>
+          <img class='svg-nord6' src='./res/img/status.svg'>
+        </div>
       </div>
     </div>
   </body>
