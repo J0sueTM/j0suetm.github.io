@@ -39,20 +39,26 @@
       <div class='invisible w-full px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-3xl text-nord1 text-center
                   md:visible md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'
            id='menu'>
-        <a target='blank' class='menu-button' href='#skills' onclick='toggleMenu()'>
+        <a class='menu-button' href='#skills' onclick='toggleMenu()'>
           <p class='menu-button-text'>SKILLS</p>
         </a>
-        <a target='blank' class='menu-button' href='#projects' onclick='toggleMenu()'>
+        <a class='menu-button' href='#projects' onclick='toggleMenu()'>
           <p class='menu-button-text'>PROJECTS</p>
         </a>
-        <a target='blank' class='menu-button' href='#contact' onclick='toggleMenu()'>
+        <a class='menu-button' href='#contact' onclick='toggleMenu()'>
           <p class='menu-button-text'>CONTACT</p>
         </a>
       </div>
     </div>
-
     <!-- landing -->
-    <div class='px-2 pt-4 flex flex-col font-ubuntu'>
+    <div class='h-screen px-2 pt-20 flex flex-col font-ubuntu'>
+      <!-- Arrow down -->
+      <a class='absolute left-1/2 bottom-4 -translate-x-1/2' href='#skills'>
+        <img class='svg-nord6 animate-pulse
+                    hover:animate-none'
+             src='./res/img/arrow-down.svg'
+             alt='arrow down button'>
+      </a>
       <div class='flex flex-col justify-center items-center
                   md:mx-auto md:flex-row'>
         <!-- pfp & email -->
@@ -64,7 +70,7 @@
                src='./res/img/pfp.png' alt='pfp'/>
           <!-- Email -->
           <a target='blank' class='my-4 rounded-lg drop-shadow-xl bg-nord1
-                    md:mb-0'
+                                   md:mb-0'
              href='mailto:teodoro.josue@protonmail.ch'>
             <p class='px-2 py-1 font-semibold text-lg text-nord6'>
               teodoro.josue@protonmail.ch
@@ -104,13 +110,14 @@
         </p>
       </div>
     </div>
-
     <!-- skills -->
     <div class='p-2 pb-4 mt-2 bg-nord6 text-nord0
-                md:w-11/12 md:mx-auto md:rounded-md md:drop-shadow-xl'>
+                md:w-11/12 md:mx-auto md:rounded-md md:drop-shadow-xl'
+         id='skills'>
       <!-- title -->
       <div class='px-2'>
         <h1 class='font-bold text-4xl text-center'>My skills</h1>
+        <!-- description -->
         <p class='mt-2 font-semibold text-xl
                   md:w-2/3 md:mx-auto'>
           Even taking into account that I'm still in high school,
@@ -121,28 +128,92 @@
         </p>
       </div>
       <!-- soft skills-->
-      <h1 class='my-4 font-bold text-3xl text-center'>Soft Skills</h1>
-      <div class='grid grid-cols-2 gap-2
-                  md:grid-cols-4 gap-4'>
-        <div class='skill-card'>
-          <h1>Communication</h1>
-          <img class='svg-nord6' src='./res/img/phone.svg'>
+      <div class='w-full flex flex-col
+                  lg:flex-row'>
+        <!-- personal skills -->
+        <div class='w-full
+                    lg:w-2/3'>
+          <h1 class='my-4 font-bold text-3xl text-center'>Soft Skills</h1>
+          <div class='px-2 grid grid-cols-1 gap-4
+                      md:pl-2 md:grid-cols-2'>
+            <div class='skill-card'>
+              <img class='svg-nord6' src='./res/img/phone.svg'>
+              <p>
+                Open to diverse ideas, concepts, hearing as much
+                as possible before taking any decision.
+              </p>
+            </div>
+            <div class='skill-card'>
+              <img class='svg-nord6' src='./res/img/time.svg'>
+              <p>
+                Always paying attention to important details, taking in
+                account smart steps towards a greater good.
+              </p>
+            </div>
+            <div class='skill-card'>
+              <img class='svg-nord6' src='./res/img/arrow-up.svg'>
+              <p>
+                Flexible on stressfull situations, hardly giving up
+                on any request, from the easiest to the hardest.
+              </p>
+            </div>
+            <div class='skill-card'>
+              <img class='svg-nord6' src='./res/img/status.svg'>
+              <p>
+                Fast learner, as long as there's a valid reason,
+                I can learn anything in a matter of seconds.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class='skill-card'>
-          <h1>Administration</h1>
-          <img class='svg-nord6' src='./res/img/time.svg'>
-        </div>
-        <div class='skill-card'>
-          <h1>Stability</h1>
-          <img class='svg-nord6' src='./res/img/arrow-up.svg'>
-        </div>
-        <div class='skill-card'>
-          <h1>Fast Learning Curve</h1>
-          <img class='svg-nord6' src='./res/img/status.svg'>
+        <!-- languages -->
+        <div class='w-full h-full space-y-4 flex flex-col
+                    lg:w-1/3'>
+          <!-- title -->
+          <h3 class='mt-4 font-bold text-3xl text-center'>Languages</h3>
+          <!-- language -->
+          <div class='language'>
+            <p>English</p>
+            <!-- progress bar -->
+            <div class='progress-bar'>
+              <div class='w-full'></div>
+            </div>
+          </div>
+          <!-- language -->
+          <div class='language'>
+            <p>Port. BR</p>
+            <!-- progress bar -->
+            <div class='progress-bar'>
+              <div class='w-full'></div>
+            </div>
+          </div>
+          <!-- language -->
+          <div class='language'>
+            <p>Spanish</p>
+            <!-- progress bar -->
+            <div class='progress-bar'>
+              <div class='w-2/3'></div>
+            </div>
+          </div>
+          <!-- language -->
+          <div class='language'>
+            <p>French</p>
+            <!-- progress bar -->
+            <div class='progress-bar'>
+              <div class='w-1/3'></div>
+            </div>
+          </div>
+          <!-- language -->
+          <div class='language'>
+            <p>Finnish</p>
+            <!-- progress bar -->
+            <div class='progress-bar'>
+              <div class='w-1/3'></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- footer -->
     <div class='mt-4 w-full py-6 h-20 bg-nord1 rounded-t-lg'>
       <p class='font-semibold text-lg text-center text-nord6'>© 2021 Josué Teodoro Moreira</p>
