@@ -5,10 +5,10 @@
   -->
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='utf-8'/>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué Teodoro Moreira | Software Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,207 +16,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     
-    <link rel='stylesheet' href='./dist/style.css'/>
+    <link rel="stylesheet" href="./dist/style.css"/>
 
-    <script src='./src/js/menu.js'></script>
+    <script src="./src/js/menu.js"></script>
   </head>
-  <body class='bg-nord0'>
+  <body class="bg-nord0">
     <!-- header -->
-    <div class='w-full h-16 flex flex-col bg-nord1 drop-shadow-lg
-                md:flex-row md:justify-between md:py-2'
-         id='header'>
+    <div class="w-full h-16 flex flex-row justify-between bg-nord1 drop-shadow-lg"
+         id="header">
       <!-- logo -->
-      <p class='ml-4 my-2 font-bakbak-one font-bold text-5xl text-nord6
-                md:my-0 '>J0sueTM</p>
-      <!-- menu trigger -->
-      <img class='absolute w-12 right-4 mt-2 svg-nord6 duration-500
-                  md:invisible
-                  hover:cursor-pointer hover:opacity-80'
-           src='./res/img/menu.svg'
-           alt='menu sandwich icon'
-           onclick='toggleMenu()'/>
-      <!-- menu -->
-      <div class='invisible w-full px-4 pt-2 pb-6 flex flex-col space-y-6 font-black text-3xl text-nord1 text-center
-                  md:visible md:w-auto md:mr-4 py-0 md:flex-row md:p-0 md:space-y-0 md:space-x-6 md:text-xl md:text-nord6'
-           id='menu'>
-        <a class='menu-button' href='#skills' onclick='toggleMenu()'>
-          <p class='menu-button-text'>SKILLS</p>
-        </a>
-        <a class='menu-button' href='#projects' onclick='toggleMenu()'>
-          <p class='menu-button-text'>PROJECTS</p>
-        </a>
-        <a class='menu-button' href='#contact' onclick='toggleMenu()'>
-          <p class='menu-button-text'>CONTACT</p>
-        </a>
-      </div>
+      <p class="ml-4 my-2 font-bakbak-one font-bold text-5xl text-nord6">
+        J0sueTM
+      </p>
+      <a class="mr-4 my-2 px-2 font-ubuntu font-bold text-3xl bg-nord6 rounded transition-all
+                hover:opacity-90"
+         href="./blog.html">
+        <p class="my-1 text-nord1">MY BLOG</p>
+      </a>
     </div>
     <!-- landing -->
-    <div class='h-screen px-2 pt-20 flex flex-col font-ubuntu'>
-      <!-- Arrow down -->
-      <a class='absolute left-1/2 bottom-4 -translate-x-1/2' href='#skills'>
-        <img class='svg-nord6 animate-pulse
-                    hover:animate-none'
-             src='./res/img/arrow-down.svg'
-             alt='arrow down button'>
-      </a>
-      <div class='flex flex-col justify-center items-center
-                  md:mx-auto md:flex-row'>
+    <div class="px-2 pt-20 flex flex-col font-ubuntu
+                ">
+      <div class="flex flex-col justify-center items-center
+                  md:mx-auto md:flex-row">
         <!-- pfp & email -->
-        <div class='w-full flex flex-col justify-center items-center
-                    md:w-1/2'>
+        <div class="w-full flex flex-col justify-center items-center
+                    md:w-1/2">
           <!-- profile picture -->
-          <img class='w-1/3 border-4 border-nord6 rounded-[50%] drop-shadow-xl
-                      md:w-7/12 md:h-full'
-               src='./res/img/pfp.png' alt='pfp'/>
+          <img class="w-1/3 border-4 border-nord6 rounded-[50%] drop-shadow-xl
+                      md:w-7/12 md:h-full"
+               src="./res/img/pfp.png" alt="pfp"/>
           <!-- Email -->
-          <a target='blank' class='my-4 rounded-lg drop-shadow-xl bg-nord1
-                                   md:mb-0'
-             href='mailto:teodoro.josue@protonmail.ch'>
-            <p class='px-2 py-1 font-semibold text-lg text-nord6'>
+          <a target="blank" class="my-4 rounded-lg drop-shadow-xl bg-nord1
+                                   md:mb-0"
+             href="mailto:teodoro.josue@protonmail.ch">
+            <p class="px-2 py-1 font-semibold text-lg text-nord6">
               teodoro.josue@protonmail.ch
             </p>
           </a>
         </div>
         <!-- social media -->
-        <div class='flex flex-row space-x-4 
-                    md:flex-col md:space-x-0 md:space-y-4'>
-          <a target='blank' class='social-media-icon' href = 'https://github.com/J0sueTM'>
-            <img class='svg-nord6' src='./res/img/github.svg'/>
+        <div class="flex flex-row space-x-4 
+                    md:flex-col md:space-x-0 md:space-y-4">
+          <a target="blank" class="social-media-icon" href = "https://github.com/J0sueTM">
+            <img class="svg-nord6" src="./res/img/github.svg"/>
           </a>
-          <a target='blank' class='social-media-icon' href = 'https://linkedin.com/in/josue-teodoro-moreira'>
-            <img class='svg-nord6' src='./res/img/linkedin.svg'/>
+          <a target="blank" class="social-media-icon" href = "https://linkedin.com/in/josue-teodoro-moreira">
+            <img class="svg-nord6" src="./res/img/linkedin.svg"/>
           </a>
-          <a target='blank' class='social-media-icon' href = 'https://twitter.com/J0sueTM'>
-            <img class='svg-nord6' src='./res/img/twitter.svg'/>
+          <a target="blank" class="social-media-icon" href = "https://twitter.com/J0sueTM">
+            <img class="svg-nord6" src="./res/img/twitter.svg"/>
           </a>
-          <a target='blank' class='social-media-icon' href = 'https://instagram.com/j0suetm'>
-            <img class='svg-nord6' src='./res/img/instagram.svg'/>
+          <a target="blank" class="social-media-icon" href = "https://instagram.com/j0suetm">
+            <img class="svg-nord6" src="./res/img/instagram.svg"/>
           </a>
         </div>
       </div>
       <!-- info -->
-      <div class='p-2 flex flex-col justify-center items-center
+      <div class="p-2 flex flex-col justify-center items-center
                   md:w-5/6 md:mx-auto
-                  lg:w-2/3'>
+                  lg:w-2/3">
         <!-- name -->
-        <h1 class='font-black text-center text-4xl text-nord6
-                   md:text-5xl'>Josué Teodoro Moreira</h1>
+        <h1 class="font-black text-center text-4xl text-nord6
+                   md:text-5xl">Josué Teodoro Moreira</h1>
         <!-- description -->
-        <p class='mt-2 font-ubuntu font-semibold text-nord6 text-xl
-                  md:w-5/6'>
+        <p class="mt-2 font-ubuntu font-semibold text-nord6 text-xl
+                  md:w-5/6">
           A curious and enthusiastic Software Developer based in SP, Brazil. My main interest is
           Low Level and Graphics Programming (C, C++, x86_64 Assembly, OpenGL, Vulkan),
           Web Development (HCJ, Tailwind, NodeJS, Python), and anything related to programming.
         </p>
       </div>
-    </div>
-    <!-- skills -->
-    <div class='p-2 pb-4 mt-2 bg-nord6 text-nord0
-                md:w-11/12 md:mx-auto md:rounded-md md:drop-shadow-xl'
-         id='skills'>
-      <!-- title -->
-      <div class='px-2'>
-        <h1 class='font-bold text-4xl text-center'>My skills</h1>
-        <!-- description -->
-        <p class='mt-2 font-semibold text-xl
-                  md:w-2/3 md:mx-auto'>
-          Even taking into account that I'm still in high school,
-          I've worked on several projects, open source, closed source
-          and college projects, which required an even more peculiar
-          set of skills, ranging from soft skills, programming
-          languages, etc.
-        </p>
-      </div>
-      <!-- soft skills-->
-      <div class='w-full flex flex-col
-                  lg:flex-row'>
-        <!-- personal skills -->
-        <div class='w-full
-                    lg:w-2/3'>
-          <h1 class='my-4 font-bold text-3xl text-center'>Soft Skills</h1>
-          <div class='px-2 grid grid-cols-1 gap-4
-                      md:pl-2 md:grid-cols-2'>
-            <div class='skill-card'>
-              <img class='svg-nord6' src='./res/img/phone.svg'>
-              <p>
-                Open to diverse ideas, concepts, hearing as much
-                as possible before taking any decision.
-              </p>
-            </div>
-            <div class='skill-card'>
-              <img class='svg-nord6' src='./res/img/time.svg'>
-              <p>
-                Always paying attention to important details, taking in
-                account smart steps towards a greater good.
-              </p>
-            </div>
-            <div class='skill-card'>
-              <img class='svg-nord6' src='./res/img/arrow-up.svg'>
-              <p>
-                Flexible on stressfull situations, hardly giving up
-                on any request, from the easiest to the hardest.
-              </p>
-            </div>
-            <div class='skill-card'>
-              <img class='svg-nord6' src='./res/img/status.svg'>
-              <p>
-                Fast learner, as long as there's a valid reason,
-                I can learn anything in a matter of seconds.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- languages -->
-        <div class='w-full h-full space-y-4 flex flex-col
-                    lg:w-1/3'>
-          <!-- title -->
-          <h3 class='mt-4 font-bold text-3xl text-center'>Languages</h3>
-          <!-- language -->
-          <div class='language'>
-            <p>English</p>
-            <!-- progress bar -->
-            <div class='progress-bar'>
-              <div class='w-full'></div>
-            </div>
-          </div>
-          <!-- language -->
-          <div class='language'>
-            <p>Port. BR</p>
-            <!-- progress bar -->
-            <div class='progress-bar'>
-              <div class='w-full'></div>
-            </div>
-          </div>
-          <!-- language -->
-          <div class='language'>
-            <p>Spanish</p>
-            <!-- progress bar -->
-            <div class='progress-bar'>
-              <div class='w-2/3'></div>
-            </div>
-          </div>
-          <!-- language -->
-          <div class='language'>
-            <p>French</p>
-            <!-- progress bar -->
-            <div class='progress-bar'>
-              <div class='w-1/3'></div>
-            </div>
-          </div>
-          <!-- language -->
-          <div class='language'>
-            <p>Finnish</p>
-            <!-- progress bar -->
-            <div class='progress-bar'>
-              <div class='w-1/3'></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- footer -->
-    <div class='mt-4 w-full py-6 h-20 bg-nord1 rounded-t-lg'>
-      <p class='font-semibold text-lg text-center text-nord6'>© 2021 Josué Teodoro Moreira</p>
     </div>
   </body>
 </html>
