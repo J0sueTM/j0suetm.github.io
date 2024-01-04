@@ -1,13 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js,ts}"],
+  purge: [],
   theme: {
-    extend: {},
     colors: {
-      dark: '#2e3030',
-      light: '#dfd9cf',
-      blue: '#525896'
-    }
+      'dark0': '#211e20',
+      'dark1': '#555568',
+      'light0': '#e9efec',
+      'light1': '#a0a08b'
+    },
+    extend: {
+      fontFamily: {
+        'abrilff': ['Abril Fatface', 'serif']
+      }
+    },
   },
   plugins: [],
 }
+
