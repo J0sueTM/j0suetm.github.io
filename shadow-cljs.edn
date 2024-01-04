@@ -5,7 +5,12 @@
                 :output-dir "resources/js"
                 :modules {:app {:init-fn com.j0suetm.core/init}}
                 :dev {:build-hooks [(teknql.tailwind/start-watch!)]}
-                :release {:build-hooks [(teknql.tailwind/compile-release!)]}
+                :release {:closure-defines {DEBUG false
+                                            PROTOCOL "https"
+                                            HOST "j0suetm.com"
+                                            PORT ""}
+                          :build-hooks [(teknql.tailwind/compile-release!)]}
                 :devtools {:http-root "./"
                            :http-port 8200}
-                :tailwind/output "resources/css/bundle.css"}}}
+                :tailwind/output "resources/css/bundle.css"
+                :tailwind/files {:tailwind.css "resources/css/index.css"}}}}

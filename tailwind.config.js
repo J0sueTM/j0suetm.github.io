@@ -7,8 +7,12 @@ module.exports = {
       'dark1': '#555568',
       'light0': '#e9efec',
       'light1': '#a0a08b'
-    }
-    extend: {},
+    },
+    extend: {
+      fontFamily: {
+        'abrilff': ['Abril Fatface', 'serif']
+      }
+    },
   },
   plugins: [],
 }
