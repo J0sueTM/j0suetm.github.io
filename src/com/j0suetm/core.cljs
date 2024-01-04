@@ -327,9 +327,6 @@
   (<>
    (hd/main
     {:class "w-full h-full max-screen-3xl mx-auto"}
-    (hd/img
-     {:class "fixed flex w-full h-full object-cover opacity-30 -z-50"
-      :src "resources/assets/img/bg_texture.jpg"})
     ($ article-navbar-cmp)
     (hd/div
      {:class (str "w-full h-full max-w-screen-xl mx-auto my-auto flex flex-col "
