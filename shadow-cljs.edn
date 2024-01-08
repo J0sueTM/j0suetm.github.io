@@ -1,16 +1,21 @@
 {:deps true
  :nrepl {:port 8777}
  :dev-http {8200 "."}
- :builds {:app {:target :browser
-                :output-dir "resources/js"
-                :modules {:app {:init-fn com.j0suetm.core/init}}
-                :dev {:build-hooks [(teknql.tailwind/start-watch!)]}
-                :release {:closure-defines {com.j0suetm.core/DEBUG false
-                                            com.j0suetm.core/PROTOCOL "https"
-                                            com.j0suetm.core/HOST "j0suetm.com"
-                                            com.j0suetm.core/PORT ""}
-                          :build-hooks [(teknql.tailwind/compile-release!)]}
-                :devtools {:http-root "./"
-                           :http-port 8200}
-                :tailwind/output "resources/css/bundle.css"
-                :tailwind/files {:tailwind.css "resources/css/index.css"}}}}
+ :builds {:app
+          {:target :browser
+           :output-dir "resources/js"
+           :modules {:app {:init-fn com.j0suetm.core/init}}
+           :dev {:build-hooks [(teknql.tailwind/start-watch!)]}
+           :release
+           {:closure-defines
+            {com.j0suetm.config/DEBUG false
+             com.j0suetm.config/PROTOCOL "https"
+             com.j0suetm.config/HOST "j0suetm.com"
+             com.j0suetm.config/PORT ""
+             com.j0suetm.config/EXTERNAL-RESOURCES-BASE-URL
+             "https://raw.githubusercontent.com/J0sueTM/j0suetm.github.io/main"}
+            :build-hooks [(teknql.tailwind/compile-release!)]}
+           :devtools {:http-root "./"
+                      :http-port 8200}
+           :tailwind/output "resources/css/bundle.css"
+           :tailwind/files {:tailwind.css "resources/css/index.css"}}}}
