@@ -42,8 +42,6 @@
         (filter-raw-articles search-filter)
         group-articles-by-year))))
 
-;;--- navbar
-
 (refx/reg-event-db
  :toggle-navbar
  [(refx.itc/path :navbar)]

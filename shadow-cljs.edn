@@ -16,6 +16,6 @@
              "https://raw.githubusercontent.com/J0sueTM/j0suetm.github.io/main"}
             :build-hooks [(teknql.tailwind/compile-release!)]}
            :devtools {:http-root "./"
-                      :http-port 8200}
+                      :http-port 8300}
            :tailwind/output "resources/css/bundle.css"
            :tailwind/files {:tailwind.css "resources/css/index.css"}}}}
